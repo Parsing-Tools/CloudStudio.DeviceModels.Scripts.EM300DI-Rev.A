@@ -8,28 +8,28 @@ function getEndpoints(deviceAddress, endpoints) {
     "Battery Level",
     endpointType.genericSensor
   );
-  em.variableTypeId = 1012;
+  em.variableTypeId = 1076;
 
   endpoints.addEndpoint("2", "Temperature", endpointType.temperatureSensor);
 
   endpoints.addEndpoint("3", "Humidity", endpointType.humiditySensor);
 
   var em = endpoints.addEndpoint("4", "Water Conv", endpointType.genericSensor);
-  em.variableTypeId = 1013;
+  em.variableTypeId = 1088;
 
   var em = endpoints.addEndpoint(
     "5",
     "Pulse Conv",
     endpointType.genericSensor
   );
-  em.variableTypeId = 1014;
+  em.variableTypeId = 1086;
 
   var em = endpoints.addEndpoint(
     "6",
     "Water",
     endpointType.genericSensor
   );
-  em.variableTypeId = 1015;
+  em.variableTypeId = 1087;
 
   endpoints.addEndpoint("7", "Flow", endpointType.flowSensor);
 }
